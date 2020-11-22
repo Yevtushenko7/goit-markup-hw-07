@@ -1,0 +1,41 @@
+.container-button {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.filter {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.button-filter {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 22px;
+  padding-right: 22px;
+  color: $primary-text-color;
+  background: $bg-team;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  border-radius: 4px;
+  border: none;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.button-filter:hover {
+  color: $hero-text;
+  background: $accent-color;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+}
+
+.filter .button-filter + .button-filter {
+  margin-left: 8px;
+}
