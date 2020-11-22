@@ -1,7 +1,3 @@
-.feature-list .list-box + .list-box {
-  padding-left: 30px;
-}
-
 .feature-list {
   margin-block-start: 0;
   margin-block-end: 0;
@@ -11,6 +7,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  & .list-box + .list-box {
+    padding-left: 30px;
+  }
 }
 
 .feature-title {
@@ -45,26 +45,34 @@
   margin-bottom: 30px;
 }
 
-.antenna::before {
-  background-image: url("../img/feature/antenna.svg");
-  border-radius: 4px;
-  background-size: 70px;
+.antenna {
+  &::before {
+    background-image: url("../img/feature/antenna.svg");
+    border-radius: 4px;
+    background-size: 70px;
+  }
 }
 
-.clock::before {
-  background-image: url("../img/feature/clock.svg");
-  border-radius: 4px;
-  background-size: 70px;
+.clock {
+  &::before {
+    background-image: url("../img/feature/clock.svg");
+    border-radius: 4px;
+    background-size: 70px;
+  }
 }
 
-.diagram::before {
-  background-image: url("../img/feature/diagram.svg");
-  border-radius: 4px;
-  background-size: 70px;
+.diagram {
+  &::before {
+    background-image: url("../img/feature/diagram.svg");
+    border-radius: 4px;
+    background-size: 70px;
+  }
 }
 
-.astronaut::before {
-  background-image: url("../img/feature/astronaut.svg");
-  border-radius: 4px;
-  background-size: 70px;
+.astronaut {
+  &::before {
+    background-image: url("../img/feature/astronaut.svg");
+    border-radius: 4px;
+    background-size: 70px;
+  }
 }

@@ -1,5 +1,15 @@
-.list-foto .item-foto + .item-foto {
-  margin-left: 30px;
+.list-foto {
+  margin-block-end: 0;
+  margin-top: 0;
+  padding-inline-start: 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &.item-foto + .item-foto {
+    margin-left: 30px;
+  }
 }
 
 .item-foto {
@@ -59,28 +69,28 @@
   padding-bottom: 30px;
   padding-inline-start: 0;
   margin-left: 30px;
-}
 
-.team-soc-link .social-link + .social-link {
-  margin-left: 10px;
+  & .social-link + .social-link {
+    margin-left: 10px;
+  }
 }
 
 .social-link {
   width: 44px;
   height: 44px;
-}
 
-.social-link:hover {
-  background-color: $accent-color;
-  border-radius: 50%;
-  transition: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
-}
+  &:hover {
+    background-color: $accent-color;
+    border-radius: 50%;
+    transition: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+  }
 
-.social-link:hover .icon-team {
-  fill: $hero-text;
-  transition: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
+  &:hover .icon-team {
+    fill: $hero-text;
+    transition: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+  }
 }
 
 .icon-team {

@@ -32,13 +32,14 @@
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-}
-.button:hover,
-.butoon:focus {
-  color: $button-bg-hover;
-  background: $hero-text;
-  transition: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
+
+  &:hover,
+  &:focus {
+    color: $button-bg-hover;
+    background: $hero-text;
+    transition: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+  }
 }
 
 .section-title {

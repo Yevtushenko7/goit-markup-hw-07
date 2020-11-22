@@ -23,6 +23,13 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: $header-bgc;
   box-sizing: border-box;
+
+  &:hover .icon-close {
+    fill: $button-bg-hover;
+    transition: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+    cursor: pointer;
+  }
 }
 
 .icon-close {
@@ -33,13 +40,6 @@
   width: 11px;
   height: 11px;
   fill: $black;
-}
-
-.btn-close:hover .icon-close {
-  fill: $button-bg-hover;
-  transition: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
-  cursor: pointer;
 }
 
 .form-title {
@@ -78,6 +78,55 @@
   letter-spacing: 0.03em;
   color: $primary-text-color;
   outline: none;
+
+  &.name:hover,
+  &.name:focus {
+    border-color: $accent-color;
+    transition: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+  }
+
+  &.name:hover + .person-img,
+  &.name:focus + .person-img {
+    fill: $accent-color;
+    transition: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+  }
+
+  &.tel:hover,
+  &.tel:focus {
+    border-color: $accent-color;
+    transition: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+  }
+
+  &.tel:hover + .tel-img,
+  &.tel:focus + .tel-img {
+    fill: $accent-color;
+    transition: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+  }
+
+  &.email:hover,
+  &.email:focus {
+    border-color: $accent-color;
+    transition: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+  }
+
+  &.email:hover + .email-img,
+  &.email:focus + .email-img {
+    fill: $accent-color;
+    transition: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+  }
+
+  &.text-area:hover,
+  &.text-area:focus {
+    border-color: $accent-color;
+    transition: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+  }
 }
 
 .person-img {
@@ -104,60 +153,11 @@
   height: 18px;
 }
 
-.form-input.name:hover,
-.form-input.name:focus {
-  border-color: $accent-color;
-  transition: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
-}
-
-.form-input.name:hover + .person-img,
-.form-input.name:focus + .person-img {
-  fill: $accent-color;
-  transition: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
-}
-
-.form-input.tel:hover,
-.form-input.tel:focus {
-  border-color: $accent-color;
-  transition: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
-}
-
-.form-input.tel:hover + .tel-img,
-.form-input.tel:focus + .tel-img {
-  fill: $accent-color;
-  transition: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
-}
-
-.form-input.email:hover,
-.form-input.email:focus {
-  border-color: $accent-color;
-  transition: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
-}
-
-.form-input.email:hover + .email-img,
-.form-input.email:focus + .email-img {
-  fill: $accent-color;
-  transition: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
-}
-
 .text-area {
   width: 448px;
   height: 120px;
   padding: 12px 16px;
   resize: none;
-}
-
-.form-input.text-area:hover,
-.form-input.text-area:focus {
-  border-color: $accent-color;
-  transition: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
 }
 
 .send {
@@ -190,6 +190,15 @@
 .checkbox-input {
   position: absolute;
   appearance: none;
+
+  &:checked + .checkbox-icon {
+    background-color: $accent-color;
+    background-image: url(../../../../img/icons/checkbox.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-origin: border-box;
+    border-color: $accent-color;
+  }
 }
 
 .checkbox-icon {
@@ -204,13 +213,4 @@
 .license {
   color: $accent-color;
   text-decoration: underline;
-}
-
-.checkbox-input:checked + .checkbox-icon {
-  background-color: $accent-color;
-  background-image: url(../../../../img/icons/checkbox.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-origin: border-box;
-  border-color: $accent-color;
 }

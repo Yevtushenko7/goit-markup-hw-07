@@ -5,23 +5,25 @@
   margin-bottom: 0;
   margin-block-start: 0em;
   padding: 0;
+
+  & .item + .item {
+    margin-left: 50px;
+  }
 }
 
-.menu .item + .item {
-  padding-left: 50px;
+.menu {
+  & .item + .item {
+    padding-left: 50px;
+  }
 }
-
-.menu-contact .item + .item {
-  margin-left: 50px;
+.item {
+  &.mail,
+  &.tel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
-
-.item.mail,
-.item.tel {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .link {
   display: flex;
   align-items: center;
@@ -31,11 +33,11 @@
   line-height: 1.14;
   font-style: normal;
   letter-spacing: 0.02em;
-}
 
-.link:hover .icon-mail,
-.link:hover .icon-phone {
-  fill: $accent-color;
-  transition: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
+  &:hover .icon-mail,
+  &:hover .icon-phone {
+    fill: $accent-color;
+    transition: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+  }
 }
