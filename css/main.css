@@ -617,25 +617,25 @@ img {
 }
 
 .antenna::before {
-  background-image: url("../../../img/feature/antenna.svg");
+  background-image: url("../img/feature/antenna.svg");
   border-radius: 4px;
   background-size: 70px;
 }
 
 .clock::before {
-  background-image: url("../../../img/feature/clock.svg");
+  background-image: url("../img/feature/clock.svg");
   border-radius: 4px;
   background-size: 70px;
 }
 
 .diagram::before {
-  background-image: url("../../../img/feature/diagram.svg");
+  background-image: url("../img/feature/diagram.svg");
   border-radius: 4px;
   background-size: 70px;
 }
 
 .astronaut::before {
-  background-image: url("../../../img/feature/astronaut.svg");
+  background-image: url("../img/feature/astronaut.svg");
   border-radius: 4px;
   background-size: 70px;
 }
